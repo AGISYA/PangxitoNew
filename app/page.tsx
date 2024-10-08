@@ -5,6 +5,7 @@ import KueFavorit from "@/components/organisms/PangsitFavorit";
 import PesanSekarang from "@/components/organisms/pesan";
 import ProductSection from "@/components/organisms/ProductSection";
 import TestimonialSection from "@/components/organisms/testimonial";
+import Image from "next/image";
 import React from "react";
 
 const Home = () => {
@@ -12,9 +13,11 @@ const Home = () => {
     <div className="bg-yellow-300">
       <Navbar />
       <div className="relative flex items-center justify-center h-screen p-6">
-        <img
+        <Image
           alt="A delicious pangsit goreng dish with spices"
-          src="images/01.jpeg"
+          src="/images/01.jpeg"
+          width="5000"
+          height="5000"
           className="absolute top-0 left-0 w-full h-full object-cover bg-center bg-cover z-10"
         />
         <div className="relative w-full h-full">

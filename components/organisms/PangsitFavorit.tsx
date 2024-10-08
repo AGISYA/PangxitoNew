@@ -1,5 +1,6 @@
 // components/organisms/PangsitFavorit.tsx
 
+import Image from "next/image";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -9,10 +10,12 @@ const PangsitFavorit: React.FC = () => {
       <div className="flex flex-wrap justify-center items-start">
         {/* Image Container */}
         <div className="relative mb-6 md:w-1/2 w-full flex justify-center">
-          <img
+          <Image
+            width={1000}
+            height={1000}
             alt="Pangsit Kuah"
             className="rounded-lg shadow-lg w-[90%] md:w-[500px] h-auto transform transition-transform duration-300 hover:scale-105"
-            src="images/11.jpg" // Main image
+            src="/images/11.jpg" // Main image
           />
         </div>
 

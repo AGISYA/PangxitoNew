@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const ProductSection = () => {
@@ -5,17 +6,17 @@ const ProductSection = () => {
     {
       title: "Pangsit Goreng",
       description: "Crispy dan gurih",
-      imgSrc: "images/1.jpg",
+      imgSrc: "/images/1.jpg",
     },
     {
       title: "Pangsit Rebus",
       description: "Lembut dan segar",
-      imgSrc: "images/2.jpg",
+      imgSrc: "/images/2.jpg",
     },
     {
       title: "Pangsit Kuah",
       description: "Segar dan lezat",
-      imgSrc: "images/3.jpg",
+      imgSrc: "/images/3.jpg",
     },
   ];
 
@@ -29,7 +30,9 @@ const ProductSection = () => {
               key={index}
               className="group card rounded-xl bg-white p-6 shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border border-gray-200"
             >
-              <img
+              <Image
+                width="1000"
+                height="1000"
                 alt={product.title}
                 className="rounded-lg mb-4 object-cover h-40 w-full transition-transform duration-300 group-hover:scale-105"
                 src={product.imgSrc}
