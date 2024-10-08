@@ -6,7 +6,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const PangsitFavorit: React.FC = () => {
   return (
-    <div className=" container mx-auto py-10 bg-white">
+    <div className=" container mx-auto py-10 bg-yellow-300">
       <div className="flex flex-wrap justify-center items-start">
         {/* Image Container */}
         <div className="relative mb-6 md:w-1/2 w-full flex justify-center">
