@@ -6,10 +6,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 export default function Navbar() {
   return (
     <header className="flex items-center justify-between p-5 bg-white shadow-lg w-full text-red-950 relative z-10">
-      {/* Logo */}
-      <div className="text-2xl font-extrabold text-yellow-500">Pangxito</div>
-
-      {/* Desktop Menu */}
+      <div className="text-2xl font-extrabold text-yellow-500">PANGXITO</div>
       <nav className="hidden md:flex space-x-8 font-medium">
         <a
           href="#home"
@@ -36,8 +33,6 @@ export default function Navbar() {
           Contact Us
         </a>
       </nav>
-
-      {/* Cart and Booking Button */}
       <div className="flex items-center space-x-6">
         <a
           href="#cart"
@@ -52,7 +47,6 @@ export default function Navbar() {
           Booking Now
         </a>
 
-        {/* Mobile Menu Icon */}
         <button className="md:hidden text-3xl text-black hover:text-yellow-500 transition-colors duration-200">
           <FaBars />
         </button>

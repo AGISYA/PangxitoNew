@@ -6,17 +6,17 @@ const ProductSection = () => {
     {
       title: "Pangsit Goreng",
       description: "Crispy dan gurih",
-      imgSrc: "/images/1.jpg",
+      imgSrc: "/images/goreng.jpg",
     },
     {
       title: "Pangsit Rebus",
       description: "Lembut dan segar",
-      imgSrc: "/images/2.jpg",
+      imgSrc: "/images/rebus.jpg",
     },
     {
       title: "Pangsit Kuah",
       description: "Segar dan lezat",
-      imgSrc: "/images/3.jpg",
+      imgSrc: "/images/kuah.jpg",
     },
   ];
 

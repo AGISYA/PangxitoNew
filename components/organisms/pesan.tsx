@@ -18,7 +18,7 @@ const PesanSekarang = () => {
         </div>
         <div className="text-center">
           <h2 className="text-5xl font-bold text-red-600">76+</h2>
-          <p className="text-lg text-red-500">Cakes Variant</p>
+          <p className="text-lg text-red-500">Pangxito Variant</p>
         </div>
       </div>
       <div className="mt-12 relative z-10">

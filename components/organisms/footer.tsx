@@ -60,17 +60,6 @@ const Footer = () => {
                 <FaTwitter className="text-xl" />
               </a>
             </div>
-            <div className="flex items-center">
-              <input
-                type="email"
-                placeholder="Email Anda"
-                className="p-2 rounded-l-md border-2 border-gray-400 focus:outline-none focus:border-yellow-500"
-              />
-              <button className="bg-yellow-500 text-black p-2 rounded-r-md hover:bg-yellow-400 transition duration-300 flex items-center">
-                <FaEnvelope className="mr-1" />
-                Subscribe
-              </button>
-            </div>
           </div>
         </div>
         <div className="mt-10 text-center">
