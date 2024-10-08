@@ -23,22 +23,33 @@ const PesanSekarang = () => {
       </div>
       <div className="mt-12 relative z-10">
         <h3 className="text-2xl font-bold text-red-700 mb-4">Hubungi Kami</h3>
-        <div className="flex justify-center gap-8 mb-4">
+        <div className="flex justify-center gap-2 mb-2">
           <div className="flex items-center">
-            <FaMapMarkerAlt className="text-3xl text-red-600 mr-2" />
-            <p className="text-lg text-gray-600">
+            <FaMapMarkerAlt className="text-sm text-red-600 mr-1" />
+            <p
+              className="text-xs text-gray-600 font-semibold"
+              style={{ fontSize: "0.5rem" }}
+            >
               Jl. Contoh Alamat No. 123, Kota
             </p>
           </div>
           <div className="flex items-center">
-            <FaClock className="text-3xl text-red-600 mr-2" />
-            <p className="text-lg text-gray-600">
+            <FaClock className="text-sm text-red-600 mr-1" />
+            <p
+              className="text-xs text-gray-600 font-semibold"
+              style={{ fontSize: "0.5rem" }}
+            >
               Senin - Jumat, 10:00 - 20:00
             </p>
           </div>
           <div className="flex items-center">
-            <FaPhone className="text-3xl text-red-600 mr-2" />
-            <p className="text-lg text-gray-600">(021) 123-4567</p>
+            <FaPhone className="text-sm text-red-600 mr-1" />
+            <p
+              className="text-xs text-gray-600 font-semibold"
+              style={{ fontSize: "0.5rem" }}
+            >
+              (021) 123-4567
+            </p>
           </div>
         </div>
       </div>
