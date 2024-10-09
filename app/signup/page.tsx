@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Signup = () => {
+export default function Signup() {
   return (
     <div className="relative h-screen w-screen flex justify-center items-center bg-white">
       {/* Background Image */}
@@ -85,6 +85,4 @@ const Signup = () => {
       </div>
     </div>
   );
-};
-
-export default Signup;
+}

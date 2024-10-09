@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Signin = () => {
+export default function signin() {
   return (
     <div className="relative h-screen w-screen flex justify-center items-center bg-white">
       <div className="absolute inset-0 z-0">
@@ -58,6 +58,4 @@ const Signin = () => {
       </div>
     </div>
   );
-};
-
-export default Signin;
+}
