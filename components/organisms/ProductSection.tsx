@@ -49,8 +49,11 @@ const ProductSection = () => {
                   <FaStar className="text-yellow-500" />
                   <FaStarHalfAlt className="text-yellow-500" />
                 </div>
-                <button className="bg-red-600 text-white py-2 px-4 rounded-full text-lg shadow-md hover:bg-red-500 transition duration-300">
+                <button className="bg-white mx-4 text-red-500 py-2 px-4 rounded-full text-lg shadow-md hover:bg-red-500 hover:text-white transition duration-300">
                   Beli Sekarang
+                </button>
+                <button className="bg-white text-red-500 py-2 px-4 rounded-full text-lg shadow-md hover:bg-red-500 hover:text-white transition duration-300">
+                  + Keranjang
                 </button>
               </div>
             </div>

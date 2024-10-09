@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
@@ -47,12 +48,20 @@ export default function Navbar() {
           >
             <RiShoppingCart2Line />
           </a>
-          <a
-            href="#booking"
-            className="hidden md:block bg-yellow-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-200"
-          >
-            Booking Now
-          </a>
+          <div className="hidden md:flex space-x-4">
+            <Link
+              href="signin"
+              className="bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-200"
+            >
+              Login
+            </Link>
+            <Link
+              href="signup"
+              className="bg-white text-yellow-500 border border-yellow-500 px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 hover:text-white transition-colors duration-200"
+            >
+              Sign Up
+            </Link>
+          </div>
           <button
             onClick={toggleModal}
             className="md:hidden text-3xl text-black hover:text-yellow-500 transition-colors duration-200"
@@ -97,6 +106,22 @@ export default function Navbar() {
               >
                 Contact Us
               </a>
+
+              {/* Login and Sign Up for mobile */}
+              <Link
+                href="signin"
+                onClick={toggleModal}
+                className="bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-200"
+              >
+                Login
+              </Link>
+              <Link
+                href="signup"
+                onClick={toggleModal}
+                className="bg-white text-yellow-500 border border-yellow-500 px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 hover:text-white transition-colors duration-200"
+              >
+                Sign Up
+              </Link>
               <button
                 onClick={toggleModal}
                 className="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-200"

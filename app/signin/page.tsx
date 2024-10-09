@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Login = () => {
+const Signin = () => {
   return (
     <div className="relative h-screen w-screen flex justify-center items-center bg-white">
       <div className="absolute inset-0 z-0">
@@ -41,13 +41,14 @@ const Login = () => {
                 Forgot password?
               </a>
             </div>
+
             <button className="w-full bg-yellow-500 text-white font-bold py-2 px-4 mt-6 rounded-md hover:bg-yellow-600 transition-colors duration-200">
               Login
             </button>
             <div className="text-center mt-6">
               <p className="text-sm text-white">
                 Belum memiliki akun?{" "}
-                <a href="#" className="text-yellow-300 hover:underline">
+                <a href="signup" className="text-yellow-300 hover:underline">
                   Signup
                 </a>
               </p>
@@ -59,4 +60,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signin;
