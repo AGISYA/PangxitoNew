@@ -20,7 +20,7 @@ const Home = () => {
           height="5000"
           className="absolute top-0 left-0 w-full h-full object-cover bg-center bg-cover z-10"
         />
-        <div className="relative w-full h-full pt-20 md:pt-0">
+        <div className="relative w-full h-full pt-20 md:pt-32">
           <div className="flex justify-start">
             <div className="relative bg-white p-2 md:p-4 rounded-lg text-center shadow-lg z-10 max-w-xs">
               <h1 className="font-playfair text-xl md:text-3xl text-red-600 mb-1 md:mb-3 font-extrabold">

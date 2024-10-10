@@ -18,7 +18,7 @@ const PesanSekarang = () => {
             <FaMapMarkerAlt className="text-sm text-red-600 mr-1" />
             <p
               className="text-xs text-gray-600 font-semibold"
-              style={{ fontSize: "0.5rem" }}
+              style={{ fontSize: "0.9rem" }}
             >
               Jl. Contoh Alamat No. 123, Kota
             </p>
@@ -27,7 +27,7 @@ const PesanSekarang = () => {
             <FaClock className="text-sm text-red-600 mr-1" />
             <p
               className="text-xs text-gray-600 font-semibold"
-              style={{ fontSize: "0.5rem" }}
+              style={{ fontSize: "0.9rem" }}
             >
               Senin - Jumat, 10:00 - 20:00
             </p>
@@ -36,7 +36,7 @@ const PesanSekarang = () => {
             <FaPhone className="text-sm text-red-600 mr-1" />
             <p
               className="text-xs text-gray-600 font-semibold"
-              style={{ fontSize: "0.5rem" }}
+              style={{ fontSize: "0.9rem" }}
             >
               (021) 123-4567
             </p>
