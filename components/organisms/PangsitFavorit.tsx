@@ -6,7 +6,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const PangsitFavorit: React.FC = () => {
   return (
-    <div className=" container mx-auto py-10 bg-yellow-300">
+    <div className="container mx-auto py-10 bg-yellow-300">
       <div className="flex flex-wrap justify-center items-start">
         <div className="relative mb-6 md:w-1/2 w-full flex justify-center">
           <Image
@@ -18,18 +18,18 @@ const PangsitFavorit: React.FC = () => {
           />
         </div>
         <div className="w-full md:w-1/2 px-6">
-          <h1 className="text-5xl font-serif font-bold text-[#5a2d22] mb-8 text-center md:text-left">
-            PANGXITO 3 IN 1
+          <h1 className="text-2xl md:text-3xl font-bold text-red-600 mb-8 text-center md:text-left">
+            Pangxito 3in1
           </h1>
 
           <div className="space-y-6">
             <div className="flex items-start">
               <FaCheckCircle className="text-[#9370db] text-2xl mr-3" />
               <div>
-                <h5 className="text-2xl font-semibold text-[#5a2d22] mb-1">
+                <h5 className="text-xl md:text-2xl font-semibold text-red-600 mb-1">
                   PANGXITO GORENG
                 </h5>
-                <p className="text-lg text-[#5a2d22] leading-relaxed">
+                <p className="text-xs md:text-lg text-black leading-relaxed">
                   Bisa di olang menjadi pangxito goreng dan di tambah dengan
                   saus
                 </p>
@@ -39,10 +39,10 @@ const PangsitFavorit: React.FC = () => {
             <div className="flex items-start">
               <FaCheckCircle className="text-[#9370db] text-2xl mr-3" />
               <div>
-                <h5 className="text-2xl font-semibold text-[#5a2d22] mb-1">
+                <h5 className="text-xl md:text-2xl font-semibold text-red-600 mb-1">
                   PANGXITO REBUS
                 </h5>
-                <p className="text-lg text-[#5a2d22] leading-relaxed">
+                <p className="text-xs md:text-lg text-black leading-relaxed">
                   Cocok juga di jadikan pangsit rebus yang lembut dan kenyal
                 </p>
               </div>
@@ -51,10 +51,10 @@ const PangsitFavorit: React.FC = () => {
             <div className="flex items-start">
               <FaCheckCircle className="text-[#9370db] text-2xl mr-3" />
               <div>
-                <h5 className="text-2xl font-semibold text-[#5a2d22] mb-1">
+                <h5 className="text-xl md:text-2xl font-semibold text-red-600 mb-1">
                   PANGXITO KUAH
                 </h5>
-                <p className="text-lg text-[#5a2d22] leading-relaxed">
+                <p className="text-xs md:text-lg text-black leading-relaxed">
                   Bisa juga di jadikan pangsit kuah dengan bumbu pedas manis
                   gurih yang bikin ketagihan
                 </p>

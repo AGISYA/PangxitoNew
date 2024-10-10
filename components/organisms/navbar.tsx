@@ -1,19 +1,40 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import React, { useState, useRef, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
 export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        setIsModalOpen(false);
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isModalOpen]);
 
   return (
     <>
-      <header className="flex items-center justify-between p-5 bg-white shadow-lg w-full text-red-950 relative z-10">
+      <header className="fixed top-0 flex items-center justify-between p-5 bg-white w-full text-red-950 z-20">
         <div className="text-2xl font-extrabold text-yellow-500">PANGXITO</div>
         <nav className="hidden md:flex space-x-8 font-medium">
           <Link
@@ -72,8 +93,17 @@ export default function Navbar() {
       </header>
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-20 transition-opacity duration-300 ease-in-out">
-          <div className="bg-white p-8 rounded-lg shadow-2xl transform transition-transform duration-300 ease-in-out scale-100 w-4/5 md:w-1/3">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity duration-300 ease-in-out flex justify-end">
+          <div
+            ref={modalRef}
+            className="bg-white bg-opacity- w-3/4 md:w-1/3 h-full shadow-2xl p-8 relative transition-transform duration-300 ease-in-out"
+          >
+            <button
+              onClick={toggleModal}
+              className="absolute top-4 right-4 text-2xl text-red-500 hover:text-yellow-500 transition-colors duration-200"
+            >
+              <FaTimes />
+            </button>
             <h2 className="text-xl font-bold text-center text-red-950 mb-6">
               Menu
             </h2>
@@ -106,8 +136,6 @@ export default function Navbar() {
               >
                 Contact Us
               </Link>
-
-              {/* Login and Sign Up for mobile */}
               <Link
                 href="/signin"
                 onClick={toggleModal}
@@ -122,12 +150,6 @@ export default function Navbar() {
               >
                 Sign Up
               </Link>
-              <button
-                onClick={toggleModal}
-                className="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-yellow-600 transition-colors duration-200"
-              >
-                Close
-              </button>
             </nav>
           </div>
         </div>

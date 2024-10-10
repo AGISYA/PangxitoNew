@@ -1,62 +1,48 @@
-import {
-  FaMoneyBillWave,
-  FaGrinStars,
-  FaPizzaSlice,
-  FaLeaf,
-  FaThumbsUp,
-} from "react-icons/fa";
+import { FaMoneyBillWave, FaGrinStars, FaThumbsUp } from "react-icons/fa";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: <FaMoneyBillWave className="text-5xl mb-4 text-green-500" />,
+      icon: <FaMoneyBillWave className="text-3xl mb-1 text-green-500" />,
       title: "Harga Terbaik",
       description: "Pangsit berkualitas dengan harga yang terjangkau.",
     },
     {
-      icon: <FaGrinStars className="text-5xl mb-4 text-yellow-500" />,
+      icon: <FaGrinStars className="text-3xl mb-1 text-yellow-500" />,
       title: "Rasa Enak",
-      description: "Nikmati rasa lezat pangsit goreng dan rebus kami.",
+      description: "Nikmati kelezatan pangsit tulang rangu 3in1 kami.",
     },
     {
-      icon: <FaPizzaSlice className="text-5xl mb-4 text-red-500" />,
-      title: "Varian Pangsit",
-      description: "Tersedia berbagai varian, dari goreng hingga kuah.",
-    },
-    {
-      icon: <FaLeaf className="text-5xl mb-4 text-green-400" />,
-      title: "Sehat dan Lezat",
-      description: "Bahan-bahan segar yang menyehatkan.",
-    },
-    {
-      icon: <FaThumbsUp className="text-5xl mb-4 text-blue-500" />,
+      icon: <FaThumbsUp className="text-3xl mb-1 text-blue-500" />,
       title: "Terekomendasi",
       description: "Pelanggan puas dengan rasa dan kualitas kami.",
     },
   ];
 
   return (
-    <div className="bg-yellow-300 py-14">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-red-600 mb-10">
+    <div className="py-6">
+      <div className="container mx-auto text-center mb-4">
+        <h2 className="text-2xl font-bold text-red-600 mb-2">
           Keunggulan Kami
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="feature-box bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
-            >
-              <div className="flex flex-col items-center">
-                {feature.icon}
-                <h3 className="text-2xl font-semibold text-red-600 mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-800">{feature.description}</p>
-              </div>
+      </div>
+      <div className="container mx-auto flex flex-wrap justify-center items-start gap-4">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center transition-transform transform hover:scale-105 text-sm md:text-base" // Added responsive text size
+          >
+            <div className="flex items-center justify-center w-12 h-12 rounded-full mb-2">
+              {feature.icon}
             </div>
-          ))}
-        </div>
+            <h3 className="text-lg font-semibold text-red-600 mb-1">
+              {feature.title}
+            </h3>
+            <p className="text-gray-800 text-center text-xs">
+              {feature.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

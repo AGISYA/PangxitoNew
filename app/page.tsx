@@ -20,15 +20,15 @@ const Home = () => {
           height="5000"
           className="absolute top-0 left-0 w-full h-full object-cover bg-center bg-cover z-10"
         />
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full pt-20 md:pt-0">
           <div className="flex justify-start">
             <div className="relative bg-white p-2 md:p-4 rounded-lg text-center shadow-lg z-10 max-w-xs">
               <h1 className="font-playfair text-xl md:text-3xl text-red-600 mb-1 md:mb-3 font-extrabold">
                 PANGXITO
               </h1>
               <p className="text-black mb-2 md:mb-4 text-xs md:text-base">
-                Pangxito 3 in 1 <br /> Bisa Di Goreng, <br /> Direbus, dan
-                Dikukus
+                Pangsit Tulang Rangu <br /> 3 in 1 bisa digoreng, <br />{" "}
+                direbus, dan dikukus
               </p>
               <button className="bg-red-600 text-white py-1 px-3 md:py-2 md:px-6 rounded-full text-xs md:text-base shadow-md hover:bg-red-500 transition duration-300">
                 PESAN SEKARANG

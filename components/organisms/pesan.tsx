@@ -11,16 +11,6 @@ const PesanSekarang = () => {
       <button className="bg-red-600 text-white py-2 px-6 rounded-lg uppercase font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:bg-red-500 relative z-10">
         Pesan Sekarang
       </button>
-      <div className="flex justify-center gap-12 mt-8 relative z-10">
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-red-600">465</h2>
-          <p className="text-lg text-red-500">Great Review</p>
-        </div>
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-red-600">76+</h2>
-          <p className="text-lg text-red-500">Pangxito Variant</p>
-        </div>
-      </div>
       <div className="mt-12 relative z-10">
         <h3 className="text-2xl font-bold text-red-700 mb-4">Hubungi Kami</h3>
         <div className="flex justify-center gap-2 mb-2">
