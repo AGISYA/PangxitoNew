@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="text-2xl font-extrabold text-yellow-500">PANGXITO</div>
         <nav className="hidden md:flex space-x-8 font-medium">
           <Link
-            href="#home"
+            href="/"
             className="text-red-950 hover:text-yellow-500 hover:scale-110 hover:tracking-wider transition-transform duration-300 ease-out"
           >
             Home

@@ -1,13 +1,12 @@
 import FeaturesSection from "@/components/organisms/features";
 import Footer from "@/components/organisms/footer";
 import Navbar from "@/components/organisms/navbar";
-import KueFavorit from "@/components/organisms/PangsitFavorit";
+import Pangxito3in1 from "@/components/organisms/pangxito3in1";
 import PesanSekarang from "@/components/organisms/pesan";
 import ProductSection from "@/components/organisms/ProductSection";
 import TestimonialSection from "@/components/organisms/testimonial";
 import Image from "next/image";
 import React from "react";
-
 const Home = () => {
   return (
     <div className="bg-yellow-300">
@@ -26,10 +25,10 @@ const Home = () => {
               <h1 className="font-playfair text-xl md:text-3xl text-red-600 mb-1 md:mb-3 font-extrabold">
                 PANGXITO
               </h1>
-              <p className="text-black mb-2 md:mb-4 text-xs md:text-base">
+              <div className="text-black mb-2 md:mb-4 text-xs md:text-base">
                 Pangsit Tulang Rangu <br /> 3 in 1 bisa digoreng, <br />{" "}
                 direbus, dan dikukus
-              </p>
+              </div>
               <button className="bg-red-600 text-white py-1 px-3 md:py-2 md:px-6 rounded-full text-xs md:text-base shadow-md hover:bg-red-500 transition duration-300">
                 PESAN SEKARANG
               </button>
@@ -41,7 +40,7 @@ const Home = () => {
       </div>
       <ProductSection />
       <FeaturesSection />
-      <KueFavorit />
+      <Pangxito3in1 />
       <PesanSekarang />
       <Footer />
     </div>

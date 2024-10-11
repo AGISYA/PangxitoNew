@@ -4,12 +4,20 @@ import Link from "next/link";
 const ProductSection = () => {
   const products = [
     {
-      title: "Pangxito Tulang Rangu Original",
+      title: (
+        <>
+          Pangxito Tulang <br /> Rangu Original
+        </>
+      ),
       imgSrc: "/images/pangxito05.png",
       detailLink: "/produk/Pangxito-Tulang-Rangu-Original",
     },
     {
-      title: "Pangxito Tulang Rangu With Cheese",
+      title: (
+        <>
+          Pangxito Tulang <br /> Rangu With Cheese
+        </>
+      ),
       imgSrc: "/images/pangxito06.png",
       detailLink: "/produk/Pangxito-Tulang-Rangu-With-Cheese",
     },
@@ -18,9 +26,9 @@ const ProductSection = () => {
   return (
     <div className="bg-yellow-300 py-14">
       <div className="container mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold text-red-600 mb-6">OUR PRODUCTS</h1>
+        <h1 className="text-4xl font-bold text-red-600 mb-6"> Our Products </h1>
         <Link href="/produk">
-          <button className="bg-red-600 text-white py-3 px-6 hover:bg-red-500 ">
+          <button className="bg-red-600 text-white py-3 px-6 hover:bg-red-500">
             View All Products
           </button>
         </Link>
@@ -32,18 +40,18 @@ const ProductSection = () => {
             className="flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
           >
             <Image
-              alt={product.title}
+              alt="Product Image"
               src={product.imgSrc}
               width={300}
               height={300}
-              className=" object-cover mb-6 "
+              className="object-cover mb-6"
             />
-            <h3 className="text-lg font-semibold text-red-600 mb-2">
+            <h3 className="text-xs md:text-lg font-semibold text-red-600 mb-2 text-center">
               {product.title}
             </h3>
             <Link
               href={product.detailLink}
-              className="text-sm text-blue-600 hover:underline"
+              className="text-xs md:text-sm text-blue-600 hover:underline"
             >
               Learn More
             </Link>

@@ -10,10 +10,10 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mb-2 text-yellow-500">
               Pangxito
             </h2>
-            <p className="text-gray-300 mb-4">
+            <div className="text-gray-300 mb-4">
               Nikmati pangsit lezat setiap hari. Hubungi kami untuk informasi
               lebih lanjut!
-            </p>
+            </div>
           </div>
           <div className="mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2 text-yellow-500">
@@ -60,11 +60,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="mt-10 text-center">
-          <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Pangxito. Semua hak dilindungi.
-          </p>
         </div>
       </div>
     </footer>
